@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html,body,.container{
+        height: 100%;
+        margin: 0;
+    }
+    .container{
+        background-color: #333;
+        margin: 0 200px 0 150px;
+    }
+    .column{
+        position: relative;
+        float: left;
+        height: 100%;
+    }
+    .middle{
+        width: 100%;
+        background-color: lightblue;
+    }
+    .left{
+        width:150px;
+        left: -150px;
+        margin-left: -100%;
+        background-color: orange;
+    }
+    .right{
+        width: 200px;
+        /*right: -200px;*/
+        margin-right: -200px;
+        background-color: indianred;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="column middle"></div>
+    <div class="column left"></div>
+    <div class="column right"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .outer{
+        position:relative;
+
+    }
+    .inner{
+        position: absolute;
+        background-color: orange;
+        height: 100vh;
+    }
+    .left{
+        left: 0;
+        width:300px;
+    }
+    .right{
+        right:0;
+        width:300px;
+    }
+    .mid{
+        left: 300px;
+        width: calc(100% - 600px);
+        background-color: lightblue;
+        height: 100vh;
+    }
+
+</style>
+<body>
+<!--float-->
+<div class="outer">
+    <div class="inner left"></div>
+    <div class="inner mid"></div>
+    <div class="inner right"></div>
+</div>
+</body>
+</html>

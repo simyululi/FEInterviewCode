@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .outer{
+        min-width: 600px;
+        width: 100%;
+    }
+    .side{
+        width: 300px;
+        background-color: orange;
+        height: 100vh;
+    }
+    .left{
+        float:left;
+
+    }
+    .mid{
+        float:left;
+        width: calc(100% - 600px);
+        background-color: lightblue;
+        height: 100vh;
+    }
+    .right{
+        float: right;
+    }
+
+</style>
+<body>
+    <div class="outer">
+        <div class="side left"></div>
+        <div class="mid"></div>
+        <div class="side right"></div>
+    </div>
+</body>
+</html>
